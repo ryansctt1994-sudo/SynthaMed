@@ -16,6 +16,12 @@ The system is designed to preserve lived health evidence, surface clinically rel
 > The model is not the clinician.  
 > The institution is not the owner of the patient record.
 
+## Safety and evidence boundary
+
+This repository is a **research and architecture baseline**. It is not a clinically validated product, autonomous medical system, regulatory approval, or medical-device claim. Architecture and simulated pressure tests do not establish diagnostic accuracy, clinical utility, patient safety, privacy/security compliance, or regulatory conformity.
+
+Before any clinical promotion, use the requirements and nonclaims in [MEDICAL_SAFETY_AND_EVIDENCE.md](MEDICAL_SAFETY_AND_EVIDENCE.md).
+
 ## Architecture Layers
 
 ### SynthaMed
@@ -50,8 +56,13 @@ The architecture is stress-tested through the Four-Regime Pressure Suite:
 - **SIM_PRESSURE_TEST_03** — State Command Capture / The Desertion Protocol
 - **SIM_PRESSURE_TEST_04** — Utility Delay Capture / The Waitlist Paradox
 
+These are governance simulations. They are useful for discovering architectural failure modes but are not clinical validation.
+
 ## Classification
 
-This repository is a research and architecture baseline.
-
-It is not validated, not autonomous, and not a medical device claim until regulatory review, prospective safety testing, and clinical validation are complete.
+```text
+RESEARCH_ARCHITECTURE
+CLINICAL_VALIDATION: NOT EARNED
+AUTONOMOUS_MEDICAL_AUTHORITY: PROHIBITED
+REGULATORY_CLEARANCE_OR_APPROVAL: NOT CLAIMED
+```
